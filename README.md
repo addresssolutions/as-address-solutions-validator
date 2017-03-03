@@ -2,6 +2,14 @@
 
 Namens- und Adressprüfung für serverseitiges javascript/nodejs
 
+Achtung: Das Modul befindet sich derzeit noch in der Entwicklung! Bei Fragen, Anregungen, etc. bitte die u.g. Kontaktperson ansprechen!
+
+Hinweis zur Nutzung:
+
+Die Verwendung ist für Validierungs- und Testzwecke frei. Für den professionellen/komerziellen Gebrauch ist allerdings eine Lizenz und ein Nutzungscode erforderlich, der bei AS Address Solutions zu erwerben ist. Stellen wir eine unerlaubte und intensive Nutzung der Services durch einzelne Personen/Organisationen fest, wird der Dienst abgeschaltet. 
+
+Features:
+
 Dieses Modul bietet Schnittstellen zum Aufruf verschiedener Validierungsfunktionen für Namen und Adressen aus dem Hause AS Address Solutions GmbH. In der ersten Version werden die folgenden Funktionalitäten unterstützt:
 - Validierung von Namenselementen (Anrede, Titel, Vorname, Nachname) auf Feldebene (z.B.: enthält ein Vornamensfeld tatsächlich einen gültigen Vornamen)
 - Strukturierung von Namen und Verteilung von Namenselementen auf die vorgesehenen Felder
@@ -44,32 +52,30 @@ Namensstrukturierung:
  
   Request-/Response-Typen
   
-  ASConvertNameRequest: 
-    VersionInput;
-    CountrycodeInput;
-    SalutationInput;
-    TitleInput;
-    FirstnameInput;
-    LastnameInput;
-
+  ASConvertNameRequest:
+    VersionInput
+    CountrycodeInput
+    SalutationInput
+    TitleInput
+    FirstnameInput
+    LastnameInput
+    
   ASConvertNameResponse:
-    ReleaseInfo;              // ReleaseInfo of used Server
-    GeneralStatus;            // general Status (1=everythin fine no conversion, 2=slight corrections, ...)
-    ConversionMessage;        // Text about conversion
-    SalutationOutput;         // corrected Salutation output
-    SalutationOutputMessage;  // message about wrong content in Salution field
-    TitleOutput;              // next fields same as Salution
-    TitleOutputMessage;
-    FirstnameOutput;
-    FirstnameOutputMessage;
-    LastnameOutput;
-    LastnameOutputMessage;
-
+    ReleaseInfo              // ReleaseInfo of used Server
+    GeneralStatus            // general Status (1=everythin fine no conversion, 2=slight corrections, ...)
+    ConversionMessage        // Text about conversion
+    SalutationOutput         // corrected Salutation output
+    SalutationOutputMessage  // message about wrong content in Salution field
+    TitleOutput              // next fields same as Salution
+    TitleOutputMessage
+    FirstnameOutput
+    FirstnameOutputMessage
+    LastnameOutput
+    LastnameOutputMessage
+    
   ASConvertNameError
-    this.ErrorStatus;         // technical error in call to ConvertBox (i.e. Network problem)
-    this.ErrorMessage;        // info text to ErrorStatus
-
-
+    ErrorStatus              // technical error in call to ConvertBox (i.e. Network problem)
+    ErrorMessage             // info text to ErrorStatus
 
 
 Author
