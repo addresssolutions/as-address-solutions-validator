@@ -50,33 +50,32 @@ Namensstrukturierung:
       }
     });
  
-  Request-/Response-Typen
+Request-/Response-Typen
   
-  ASConvertNameRequest:
-    - VersionInput
-    - CountrycodeInput
-    - SalutationInput
-    - TitleInput
-    - FirstnameInput
-    - LastnameInput
+ASConvertNameRequest:
+- VersionInput
+- CountrycodeInput
+- SalutationInput
+- TitleInput
+- FirstnameInput
+- LastnameInput
     
-  ASConvertNameResponse:
-    - ReleaseInfo              // ReleaseInfo of used Server
-    - GeneralStatus            // general Status (1=everythin fine no conversion, 2=slight corrections, ...)
-    - ConversionMessage        // Text about conversion
-    - SalutationOutput         // corrected Salutation output
-    - SalutationOutputMessage  // message about wrong content in Salution field
-    - TitleOutput              // next fields same as Salution
-    - TitleOutputMessage
-    - FirstnameOutput
-    - FirstnameOutputMessage
-    - LastnameOutput
-    - LastnameOutputMessage
+ASConvertNameResponse:
+- ReleaseInfo              // ReleaseInfo of used Server
+- GeneralStatus            // general Status (1=everythin fine no conversion, 2=slight corrections, ...)
+- ConversionMessage        // Text about conversion
+- SalutationOutput         // corrected Salutation output
+- SalutationOutputMessage  // message about wrong content in Salution field
+- TitleOutput              // next fields same as Salution
+- TitleOutputMessage
+- FirstnameOutput
+- FirstnameOutputMessage
+- LastnameOutput
+- LastnameOutputMessage
     
-  ASConvertNameError
-    - ErrorStatus              // technical error in call to ConvertBox (i.e. Network problem)
-    - ErrorMessage             // info text to ErrorStatus
-
+ASConvertNameError
+- ErrorStatus              // technical error in call to ConvertBox (i.e. Network problem)
+- ErrorMessage             // info text to ErrorStatus
 
 Author
 
