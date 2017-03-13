@@ -2,13 +2,9 @@
 
 Namens- und Adressprüfung für serverseitiges javascript/nodejs
 
-Umfangreiche Informationen zum Anwendungsbereich, Hintergrund und Installation finden Sie im Wiki.
+Umfangreiche Informationen zum Anwendungsbereich, Hintergrund und Installation finden Sie im Wiki: https://github.com/addresssolutions/as-address-solutions-validator/wiki
 
 Achtung: Das Modul befindet sich derzeit noch in der Entwicklung! Bei Fragen, Anregungen, etc. bitte die u.g. Kontaktperson ansprechen!
-
-Hinweis zur Nutzung:
-
-Die Verwendung ist für Validierungs- und Testzwecke frei. Für den professionellen/komerziellen Gebrauch ist allerdings eine Lizenz und ein Nutzungscode erforderlich, der bei AS Address Solutions zu erwerben ist. Stellen wir eine unerlaubte und intensive Nutzung der Services durch einzelne Personen/Organisationen fest, wird der Dienst abgeschaltet. 
 
 Features:
 
