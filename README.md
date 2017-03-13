@@ -80,10 +80,10 @@ Request-/Response-Typen
 Author
 
 
-**Ralf Geerken  
-http://www.address-solutions.de  
-r.geerken@address-solutions.de  
-**
+**Ralf Geerken**  
+**http://www.address-solutions.de**    
+**r.geerken@address-solutions.de**  
+
 
 Copyright and license
 
