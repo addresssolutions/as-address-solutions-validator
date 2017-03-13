@@ -2,6 +2,8 @@
 
 Namens- und Adressprüfung für serverseitiges javascript/nodejs
 
+Umfangreiche Informationen zum Anwendungsbereich, Hintergrund und Installation finden Sie im Wiki.
+
 Achtung: Das Modul befindet sich derzeit noch in der Entwicklung! Bei Fragen, Anregungen, etc. bitte die u.g. Kontaktperson ansprechen!
 
 Hinweis zur Nutzung:
