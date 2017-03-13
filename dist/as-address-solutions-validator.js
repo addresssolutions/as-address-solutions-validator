@@ -451,7 +451,7 @@ module.exports = {
   },
 
 
-  ASValidateTitulation: function (req, callback) {
+  ASValidateSalutation: function (req, callback) {
     var cberr = new this.ASValidateNameError();
     var cbres = new this.ASValidateNameResponse();
 
