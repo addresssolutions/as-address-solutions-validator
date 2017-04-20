@@ -2,13 +2,11 @@
 
 Namens- und Adressprüfung für serverseitiges javascript/nodejs
 
+Umfangreiche Informationen zum Anwendungsbereich, Hintergrund und Installation finden Sie im Wiki: https://github.com/addresssolutions/as-address-solutions-validator/wiki
+
 Achtung: Das Modul befindet sich derzeit noch in der Entwicklung! Bei Fragen, Anregungen, etc. bitte die u.g. Kontaktperson ansprechen!
 
-Hinweis zur Nutzung:
-
-Die Verwendung ist für Validierungs- und Testzwecke frei. Für den professionellen/komerziellen Gebrauch ist allerdings eine Lizenz und ein Nutzungscode erforderlich, der bei AS Address Solutions zu erwerben ist. Stellen wir eine unerlaubte und intensive Nutzung der Services durch einzelne Personen/Organisationen fest, wird der Dienst abgeschaltet. 
-
-Features:
+## Features:
 
 Dieses Modul bietet Schnittstellen zum Aufruf verschiedener Validierungsfunktionen für Namen und Adressen aus dem Hause AS Address Solutions GmbH. In der ersten Version werden die folgenden Funktionalitäten unterstützt:
 - Validierung von Namenselementen (Anrede, Titel, Vorname, Nachname) auf Feldebene (z.B.: enthält ein Vornamensfeld tatsächlich einen gültigen Vornamen)
@@ -21,13 +19,13 @@ Das Modul führt dabei einen XmlRpc-Request an einen Server der AS Address Solut
 
 Unter https://github.com/addresssolutions/as-input-validator-sample ist eine komplette Beispielanwendung in nodejs zu finden.
 
-Installation
+## Installation
 
 Clonen des repository https://github.com/addresssolutions/as-address-solutions-validator.git oder einfach das ZIP-File downloaden und entpacken.
 
-Funktionsaufrufe
+## Funktionsaufrufe
 
-Namensstrukturierung:
+Beispiel Namensstrukturierung (vgl. auch Wiki):
 
     // erzeugen eines Request-Objets vom TypASConvertNameRequest und Befüllung der Übergabeparameter
     var as_req = new as_address_solutions_validator.ASConvertNameRequest(
@@ -52,7 +50,7 @@ Namensstrukturierung:
  
 Request-/Response-Typen
   
-ASConvertNameRequest:
+**ASConvertNameRequest**:
 - VersionInput
 - CountrycodeInput
 - SalutationInput
@@ -60,7 +58,7 @@ ASConvertNameRequest:
 - FirstnameInput
 - LastnameInput
     
-ASConvertNameResponse:
+**ASConvertNameResponse**:
 - ReleaseInfo              // ReleaseInfo of used Server
 - GeneralStatus            // general Status (1=everythin fine no conversion, 2=slight corrections, ...)
 - ConversionMessage        // Text about conversion
@@ -73,16 +71,20 @@ ASConvertNameResponse:
 - LastnameOutput
 - LastnameOutputMessage
     
-ASConvertNameError
+**ASConvertNameError**
 - ErrorStatus              // technical error in call to ConvertBox (i.e. Network problem)
 - ErrorMessage             // info text to ErrorStatus
 
+
+
 Author
 
-Ralf Geerken
-http://www.address-solutions.de
-r.geerken@address-solutions.de
+
+**Ralf Geerken**  
+**http://www.address-solutions.de**    
+**r.geerken@address-solutions.de**  
+
 
 Copyright and license
 
-Copyright 2016 AS Address Solutions under the MIT license.
+Copyright 2017 AS Address Solutions under the MIT license.
